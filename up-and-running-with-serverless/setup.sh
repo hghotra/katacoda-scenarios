@@ -1,5 +1,5 @@
 #!/bin/bash
-ENDPOINT="https://gvgx8c2xfj.execute-api.us-east-1.amazonaws.com/get-credentials"
+ENDPOINT="https://75ls82iwa3.execute-api.us-east-2.amazonaws.com/get-credentials"
 RESULT=$( curl -s "$ENDPOINT" )
 mkdir ~/.aws
 touch ~/.aws/credentials
