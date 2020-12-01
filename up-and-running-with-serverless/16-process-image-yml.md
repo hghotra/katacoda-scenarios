@@ -47,7 +47,7 @@ plugins:
 
 custom:
   datadog:
-    forwarder: arn:aws:lambda:us-east-1:095257436141:function:datadog-ForwarderStack-1AMJ1QJ882CUH-Forwarder-1T13KB0KAFJEB
+    forwarder: arn:aws:lambda:us-east-1:842025682476:function:datadog-ForwarderStack-102YRLY6R038G-Forwarder-7OZ2C50VJEGB
 ```{{copy}}
 
 `process-image` will be invoked when a new file is uploaded to our S3 bucket.
