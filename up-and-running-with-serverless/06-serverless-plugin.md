@@ -40,7 +40,7 @@ plugins:
 custom:
   datadog:
     enableXrayTracing: true
-    forwarder: arn:aws:lambda:us-east-1:095257436141:function:datadog-ForwarderStack-1AMJ1QJ882CUH-Forwarder-1T13KB0KAFJEB
+    forwarder: arn:aws:lambda:us-east-1:842025682476:function:datadog-ForwarderStack-102YRLY6R038G-Forwarder-7OZ2C50VJEGB
 ```{{copy}}
 
 [Learn more about Datadog Lambda Layers](https://docs.datadoghq.com/integrations/amazon_lambda/?tab=node#installing-and-using-the-datadog-layer)
