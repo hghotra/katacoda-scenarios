@@ -2,8 +2,8 @@ Now we'll create the YAML config file for our Serverless project.
 
 Create the serverless.yml file: `touch ~/workshop/serverless.yml`{{execute}}. Then copy the YAML content below into the new file:
 
-```
-service: dash-serverless-workshop
+````
+service: dd-serverless-workshop
 
 provider:
   name: aws
@@ -36,3 +36,4 @@ functions:
 This will create the S3 bucket and Lambda function that we're going to be using. The Lambda function will use the `handler` that we just wrote in `create-image-upload-url.js`.
 
 [Serverless.yml reference](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
+````

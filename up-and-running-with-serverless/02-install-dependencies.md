@@ -4,9 +4,9 @@ First create a `package.json` by running `touch ~/workshop/package.json`{{execut
 
 Fill `package.json` with this to specify our NPM dependencies:
 
-```
+````
 {
-  "name": "dash-serverless-workshop",
+  "name": "dd-serverless-workshop",
   "version": "1.0.0",
   "description": "Demo Image Processing Pipeline in Lambda",
   "main": "index.js",
@@ -20,4 +20,4 @@ Fill `package.json` with this to specify our NPM dependencies:
 ```{{copy}}
 
 Ensure that you are in the workshop directory (`cd ~/workshop`{{execute}}), and then fetch the dependencies with `npm install`{{execute}}
-
+````
