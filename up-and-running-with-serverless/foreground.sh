@@ -2,4 +2,4 @@
 statuscheck tools
 cd /root/workshop
 clear
-prepenvironment
+# prepenvironment
