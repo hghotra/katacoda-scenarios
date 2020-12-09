@@ -95,7 +95,7 @@
           "chmod": "+x"
         },
         {
-          "file": "firstcatchup.sh",
+          "file": "catchup9.sh",
           "target": "/usr/local/bin",
           "chmod": "+x"
         }
