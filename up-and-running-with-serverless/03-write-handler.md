@@ -1,11 +1,16 @@
 Now we're going to write our Lambda handler code.
-Create another file called `create-image-upload-url.js` with these contents::
+Create another file called `create-image-upload-url.js` with this command: `touch ~/workshop/create-image-upload-url.js`{{execute}}
+
+Copy the following code into that file.
+
 
 ```
 const AWS = require("aws-sdk");
 const uuid = require("uuid/v4");
 
 const axios = require("axios");
+
+//placeholder 1: Import senddistributionmetric
 
 module.exports.handler = async (event, context) => {
   const s3 = new AWS.S3();
@@ -14,6 +19,8 @@ module.exports.handler = async (event, context) => {
 
   const id = `${uuid()}.jpg`;
   const key = `${stage}/unprocessed/${id}`;
+
+  //placeholder 3: Log the image id
 
   const unprocessedImageUrl = `http://${bucket}.s3.amazonaws.com/${stage}/unprocessed/${id}`;
   const processedImageUrl = `http://${bucket}.s3.amazonaws.com/${stage}/processed/${id}`;
@@ -36,6 +43,9 @@ module.exports.handler = async (event, context) => {
   const processedImageTinyUrlResponse = await axios.get(
     `https://tinyurl.com/api-create.php?url=${processedImageUrl}`
   );
+
+  //placeholder 2: send the metric
+
 
   return {
     statusCode: 202,
