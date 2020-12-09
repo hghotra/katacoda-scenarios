@@ -12,7 +12,7 @@ rm create-image-upload-url.js
 rm package.json
 echo Creating Serverless.yml file
 cat > serverless.yml <<EOL
-service: dd-serverless-workshop
+service: dash-serverless-workshop
 
 provider:
   name: aws
@@ -111,7 +111,7 @@ echo Creating package.json
 
 cat > package.json <<EOL
 {
-  "name": "dd-serverless-workshop",
+  "name": "dash-serverless-workshop",
   "version": "1.0.0",
   "description": "Demo Image Processing Pipeline in Lambda",
   "main": "index.js",
