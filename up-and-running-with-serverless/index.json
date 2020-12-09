@@ -8,8 +8,7 @@
       "courseData": "setup.sh",
       "code": "foreground.sh"
     },
-    "steps": [
-      {
+    "steps": [{
         "title": "Set up serverless framework",
         "text": "01-install-serverless.md"
       },
@@ -90,8 +89,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [
-        {
+      "host01": [{
           "file": "upload.sh",
           "target": "/root/workshop",
           "chmod": "+x"
